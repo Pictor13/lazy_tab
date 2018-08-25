@@ -1,8 +1,8 @@
 {
   "name": "Lazy Tabs",
-  "version": "0.0.0.0",
-  "manifest_version": 2,
-  "description": "Unload all inactive tabs (except pinned) at startup or by clicking an icon",
+  "version": "0.6.0",
+  "manifest_version": 3,
+  "description": "Unload all inactive tabs (except pinned) at startup, at creation (e.g. session restore) or by clicking an icon",
   "incognito": "not_allowed",
   "minimum_chrome_version": "54",
   "permissions": [
@@ -10,14 +10,14 @@
   ],
   "browser_action"    : {
     "default_title"   : "Unload other tabs",
-    "default_icon"    : "require(./ico_48.png)"
+    "default_icon"    : "ico_48.png"
   },
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
   "icons": {
-    "128": "require(./ico_128.png)",
-    "48": "require(./ico_48.png)"
+    "128": "ico_128.png",
+    "48": "ico_48.png"
   }
 }
