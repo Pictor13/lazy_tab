@@ -17,6 +17,11 @@ Or just [click the url](https://cnhv.co/87z) and donate a little bit of your CPU
 
 ## Release History
 
+### 0.6.0 ( thanks to [Igor Pellegrini](https://github.com/Pictor13) )
+  * Discard highlighted tabs, if any, otherwise discard all
+  * Discard on creation (works at startup, at session-load, at open-in-new-tab)
+  * Refactor with named functions
+
 ### 0.5.2 ( thanks to [Mathieu Hofman](https://github.com/mhofman) )
   * Discard active tabs if their window is minimized
   * Transform the background page into an event page

@@ -18,8 +18,6 @@ let isActive = tab => tab.active;
 
 let isVisible = (tab, win) => isActive(tab) && win && win.state !== 'minimized';    // @todo This has to be reviewd. Win === undefined?
 
-let isSpecialUrl = tab => specialUrls.test(tab.url);
-
 let isLoaded = tab => tab.status === 'complete';
 
 let isPinned = tab => tab.pinned;
@@ -27,6 +25,8 @@ let isPinned = tab => tab.pinned;
 let hasTitle = tab => markedTabs[tab.id].hasOwnProperty('title');
 
 let hasFavicon = tab => markedTabs[tab.id].hasOwnProperty('favIconUrl');
+
+let hasSpecialUrl = tab => specialUrls.test(tab.url);
 
 let hasInfoForDiscard = (tab, changeInfo) => {
     // init minimal info before discard
